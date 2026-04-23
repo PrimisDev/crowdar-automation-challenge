@@ -16,3 +16,8 @@ Feature: Login and Cart
         When the user adds a product to the cart
         And the user removes the product from the cart
         Then the cart should be empty
+
+    @FailTest
+    Scenario: Intentional failure for reporting
+        Given the user logs in as "standard"
+        Then the user should see an incorrect message

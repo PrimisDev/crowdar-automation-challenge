@@ -19,3 +19,7 @@ When("the user removes the product from the cart", () => {
 Then("the cart should be empty", () => {
   cartPage.verifyCartIsEmpty();
 });
+
+Then("the user should see an incorrect message", () => {
+  expect("Login successful").to.eq("Error");
+});
