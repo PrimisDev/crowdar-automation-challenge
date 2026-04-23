@@ -1,0 +1,7 @@
+node_modules
+Cypress/screenshots/
+Cypress/videos/
+Cypress/reports/
+Cypress/fixture/
+Cypress/suport/commands.js
+.env

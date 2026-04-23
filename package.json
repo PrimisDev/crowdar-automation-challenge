@@ -1,0 +1,27 @@
+{
+  "name": "Crowdar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "cypress run",
+    "test:chrome": "cypress run --browser chrome --reporter mochawesome",
+    "test:firefox": "cypress run --browser firefox --reporter mochawesome",
+    "report": "open Cypress/reports/html/index.html",
+    "test:api": "cypress run --spec cypress/e2e/api.feature"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^24.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.8",
+    "cypress": "^15.14.1",
+    "cypress-mochawesome-reporter": "^3.8.4",
+    "esbuild": "^0.28.0",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^4.4.1",
+    "mochawesome-report-generator": "^6.3.2",
+    "wait-on": "^9.0.5"
+  }
+}
